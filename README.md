@@ -15,7 +15,7 @@ This project simulates GA4-style tracking data to analyze the effectiveness of m
 
 
 ## Dataset Overview
-This project uses data fromthe [Multitouch Attribution Modelling project on Kaggle](https://www.kaggle.com/code/hughhuyton/multitouch-attribution-modelling)
+This project uses data from the [Multitouch Attribution Modelling Project on Kaggle.](https://www.kaggle.com/code/hughhuyton/multitouch-attribution-modelling)
 
 - Over 586,000 marketing touchpoints
 - 240,000 unique customers
