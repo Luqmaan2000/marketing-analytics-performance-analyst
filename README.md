@@ -1,31 +1,53 @@
 # 📊 Marketing Funnel & Attribution Analysis (E-Commerce Simulation)
 
-This project simulates GA4-style tracking data to analyze the effectiveness of marketing campaigns in an e-commerce setting. It covers funnel performance, attribution modeling, and campaign ROI analysis — aligned with real-world marketing analytics workflows used in retail environments.
+This project simulates and analyzes a multi-touch marketing journey using Python. It explores how users interact with various channels before converting, and applies attribution modeling to understand each channel's contribution to conversion.
+
+
+## 📊 Project Objectives
+
+- Understand how many touchpoints users have before converting
+- Analyze which channels appear early (first-touch) vs. late (last-touch)
+- Apply attribution models to measure channel contribution:
+  - First-touch
+  - Last-touch
+  - Linear attribution
 
 ---
 
-## 🎯 Objectives
+## 🧠 Skills Demonstrated
 
-- Analyze user journeys from first touch to conversion
-- Identify drop-off points across the marketing funnel
-- Apply first-touch and last-touch attribution models
-- Measure ROI and conversion rates by marketing channel
-- Segment users based on behavior and source
+- **Python**: pandas, matplotlib, seaborn
+- **Data Cleaning & EDA**: structuring, grouping, filtering, joining
+- **Funnel Analysis**: touchpoint depth, conversion behavior
+- **Attribution Modeling**: channel-level contribution scoring
+- **Data Visualization**: stacked histograms, bar charts
+- **Project Structuring**: modular scripts and reproducible notebooks
+
+---
+
+## 🔍 Key Insights
+
+- Users who convert typically engage with 2–5 touchpoints
+- **Social Media** and **Paid Search** are strong acquisition channels
+- **Email** and **Direct** are effective in closing conversions
+- Linear attribution reveals that most channels play a role across the funnel
+
+---
+
+## 📊 Attribution Modeling
+
+The project compares three models:
+
+### 1. First-Touch Attribution
+- Credits the **initial channel**
+- Emphasizes acquisition performance
+
+### 2. Last-Touch Attribution
+- Credits the **final channel**
+- Highlights closing/retargeting strength
+
+### 3. Linear Attribution
+- Distributes credit **evenly across all touchpoints**
+- Best reflects multi-touch journeys
 
 
-
-## Dataset Overview
-This project uses data from the [Multitouch Attribution Modelling Project on Kaggle.](https://www.kaggle.com/code/hughhuyton/multitouch-attribution-modelling)
-
-- Over 586,000 marketing touchpoints
-- 240,000 unique customers
-- ~18,000 conversions
-
-Each row represents a touchpoint a user has with a marketing channel prior to converting or exiting, enabling various attribution models to be tested (e.g. last-touch, first touch, linear)
-
-### 📄 Key Features in the Dataset:
-- `user_id`: Unique identifier for each user
-- `timestamp`: Time of each interaction
-- `channel`: Marketing channel (e.g., Email, Paid Search, Organic)
-- `conversion`: Boolean indicating whether a conversion occurred
-- `conversion_value`: Monetary value of the conversion
